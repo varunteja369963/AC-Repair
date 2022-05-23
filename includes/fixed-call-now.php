@@ -1,0 +1,1 @@
+<section class="call-now-bar"><a onclick="gtag_report_conversion();" href="tel:+918008527955"><span class="fa fa-phone"></span>Call Customer Support</a></section>

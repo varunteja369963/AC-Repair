@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SS Admin Panel</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+    .login-form-label {
+         text-align: center;
+     }
+
+     #danger-popup {
+        display: none;
+     }
+
+    @media screen and (max-width: 320px) {
+     .login-form-label h3{
+         font-size: 18px!important;
+         margin-bottom: 0px!important;
+     }
+    }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#username").val("");
+            $("#password").val("");
+            if (document.cookie.indexOf('username=') < 0) { 
+            $("#submit-form").click(function() {
+                var $username = $("#username").val();
+                var $password = $("#password").val();
+                if ($username === "AC Repair" && $password === "Ravi123") {
+                    document.cookie = "username=" + $username;
+
+                    window.location.href = "home.php"
+                }
+                else {
+                    $("#danger-popup").css("display", "none");
+                    $("#danger-popup").slideDown();
+                    return false;
+                }
+            });
+          }
+          else {
+            window.location.href = "home.php";
+          }
+        });
+    </script>
+</head>
+<body class="bg-dark">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+              <div class="card rounded-0">
+                <div class="card-header login-form-label">
+                  <h3 mb-0>Admin Login Panel</h3>
+                </div>
+                <div class="card-body">
+                  <form action="#">
+                    <div class="alert alert-danger" id = "danger-popup">Invalid Username or Password</div>
+                    <div class="form-group">
+                      <label for="username1">Username</label>
+                      <input type="text" id = "username" class="form-control form-control-lg rounded-0" placeholder="username">
+                    </div>
+                    <div class="form-group">
+                      <label for="password1">Password</label>
+                      <input type="password" class="form-control form-control-lg rounded-0" id = "password" placeholder="password">
+                    </div>
+                    <button type="submit" id = "submit-form" class="btn btn-primary btn-lg">Log In</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+      </div>
+    </body>
+</html>

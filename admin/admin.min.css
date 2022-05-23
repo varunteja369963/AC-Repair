@@ -1,0 +1,276 @@
+.customer-record {
+    padding-left: 15px;
+    padding-right:15px;
+}
+
+/* CUSTOMER RECORD HEADER */
+.customer-record-header {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.add-customer {
+    position: absolute;
+    right: 0px;
+}
+
+.new-symbol {
+    font-weight: bold;
+}
+/* CUSTOMER RECORD HEADER */
+
+/* SEARCH BOX */
+.search-box-group {
+    border: 1px solid #6c757d;
+    border-radius: 7px 20px 20px 7px;
+ }
+
+.search-box-group2 {
+    border: 1px solid #6c757d;
+    border-radius: 20px;
+    margin-top: 0px !important;
+    margin-bottom: 5px !important;
+}
+
+#search {
+    /*! outline: none!important; */
+    /*! border: none!important; */
+}
+.search-with-options {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.form-data, .modal2-searchBox {
+    border: none;
+    border-radius: 20px;
+}
+
+#modal2-searchBox-ack {
+  color: red;
+  font-size: 14px;
+}
+
+#modal-body-container {
+    margin-top: 10px;
+}
+
+#modal2-footer {
+    display: none;
+}
+/* SEARCH BOX */
+
+/* CUSTOMER RECORDING FORM */
+.customer-form-table {
+    border: none;
+    width: 100%;
+}
+
+.customer-form-table tr {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.heading {
+    font-weight: bold;
+    text-align:right;
+    padding-right: 10px;
+    width: 100px;
+    line-height: 0px;
+}
+
+.cust-uname, .cust-mobile, .cust-area, .cust-amount, .cust-issue, #cust-brand, #cust-appliance, #technician, #agt, #cust-brand2, #cust-appliance2 {
+    width: 100%;
+    padding: 6px 10px;
+    letter-spacing: 1px;
+    margin-top: 12px;
+    margin-bottom: 0px!important;
+    border: 1px solid #6c757d;
+    border-radius: 5px;
+    resize: none;
+}
+
+#myModal, #myModal2, #myModal3, #myModal4 {
+   opacity: 1; 
+}
+
+.btn-danger {
+    position: absolute;
+    left: 4%;
+}
+
+.add-customer-ack {
+    color: red;
+}
+/* CUSTOMER RECORDING FORM */
+
+/* CUSTOMER INFORMATION */
+.about-customer {
+    margin-top: 40px;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.customer-table {
+    border: none;
+    table-layout: fixed;
+    min-width: 100%;
+    max-width: 100%;
+    overflow: auto;
+    border-collapse: collapse;
+}
+
+.customer-table th {
+  border: 1px solid #f4f4f4;
+  padding: 8px;
+  border-bottom-width: 3px;
+}
+
+.customer-table td {
+  border: 1px solid #f4f4f4;
+  padding: 8px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.success_status_mark,
+.failed_status_mark, 
+.pending_status_mark {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.success_status_mark {
+    background-color: green;
+}
+
+.failed_status_mark {
+    background-color: red;
+}
+
+.pending_status_mark {
+    background-color: orange;
+}
+
+#table-body2 {
+    display: none;
+}
+
+/* VIEW INFO MODAL BOX */
+.customer-info-table {
+    width: 100%;
+}
+
+.heading2 {
+    font-weight: bold;
+    width: 120px;   
+}
+
+.customer-info-table td {
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.viewDetailsClose {
+    position: static;
+}
+/* VIEW INFO MODAL BOX */
+
+/* EDIT CUSTOMER DETAILS */
+.editCustomerDetails {
+    margin-left: 5px;
+}
+
+#cust-uname4, #cust-mobile4, #cust-area4 {
+    margin-top: 0px;
+}
+
+.customer-form-table td {
+    padding-top: 20px;
+}
+
+.select-product-options .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.select-product-options .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.select-product-options .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.select-product-options .container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.select-product-options .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.select-product-options .container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+#cust-issue-row {
+    display: none;
+}
+/* EDIT CUSTOMER DETAILS */
+
+/* CONTACT INFO */
+.about-contact {
+    max-height: 90vh;
+    overflow: auto;
+}
+/* CONTACT INFO */
+
+@media screen and (max-width: 900px) {
+    .input-group-prepend {
+        display: none;
+    }
+    
+    search-box-group {
+    border-radius: 20px;
+    }
+    
+    #form-data {
+        border-radius: 20px;
+    }
+}
+
